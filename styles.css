@@ -1,0 +1,86 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+  width: fit-content;
+}
+.box {
+  width: 15rem;
+  height: 30rem;
+}
+.sedan,
+.suv,
+.luxury {
+  margin: 2rem;
+}
+.sedan-container {
+  background-color: hsl(31, 77%, 52%);
+}
+.suv-container {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury-container {
+  background-color: hsl(179, 100%, 13%);
+}
+.heading {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+.description {
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 2rem;
+  letter-spacing: 1px;
+}
+.btn {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  outline: none;
+  border: none;
+  mix-blend-mode: lighten;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 6rem;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: gray;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 420px) {
+  .wrapper {
+    overflow: hidden;
+    width: min-content;
+  }
+  .box {
+    height: 25rem;
+  }
+  .btn {
+    margin-top: 2rem;
+  }
+}
